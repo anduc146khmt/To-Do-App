@@ -1,7 +1,7 @@
 # To Do App
 A To Do App to help you schedule your work on a day.
 <br/>
-This app don't have responsive version, it will be available soon. 
+This app don't have responsive version, I will update soon. 
 <br/>
 Now, you should use computer for the best experience.
 <br/>
