@@ -1,5 +1,5 @@
 # To-Do App
-This is a To Do App to help you schedule your work on a day.
+A To Do App to help you schedule your work on a day.
 <br/>
 Your data is stored in our backend server calling from https://todify-api.herokuapp.com/tasks/.
 <br/>
