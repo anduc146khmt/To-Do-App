@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Recursive';
+    position: relative;
+}
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #F8F9FA;
+}
+.header__content {
+    width: 85%;
+    margin:auto;
+    padding: 40px 0;
+}
+.bar {
+    width: 50px;
+    height: 50px;
+    color: black;
+    line-height: 1.1;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.bar:hover {
+    background-color: transparent;
+}
+.header__info {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+}
+.header__info img{
+    width: 60px;
+    height: auto;
+    margin-left: 2vw;
+}
+.header__info h3 {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0,5px;
+}
+.header__login a button {
+    margin: 2vh 0.5vw 0; 
+}
+/* SIZE BAR */
+.sizebar {
+    opacity: 0;
+    transform: translateX(-100%);
+    width: 280px;
+    position: fixed;
+    top: 135px;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all 0.75s;
+}
+/* TO-DO CONTENT */
+.todo__content {
+    margin-top: 200px;
+    text-align: center;
+}
+.todo__content h3 {
+    letter-spacing: 1px;
+    font-size: 3rem;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.todo__content .adder {
+    position: relative;
+    width: 30%;
+    margin: 0px auto;
+    display: block;
+}
+.todo__content .adder span {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 30px;
+    line-height: 1.3;
+    cursor: pointer;
+    transition: all 500ms;
+}
+.todo__content i {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.todo__content i:hover {
+    color:#ff0e83;
+    cursor: pointer;
+}
+.todo__content .adder span:hover {
+    transform: rotate(360deg);
+}
+.todo__content .adder input {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+.todo__content ul {
+    width: 30%;
+    margin: 0px auto;
+    list-style: none;
+    padding : 0;
+}
+.todo__content ul p {
+    margin-bottom: 0;
+}
+.todo__content ul .todo__item i {
+    font-size: 1.2rem;
+    opacity: 0;
+    margin-top: 0;
+    padding: 5px 0;
+}
+.todo__content ul .todo__item p {
+    word-wrap: break-word;
+    display: inline;
+}
+.todo__content ul .todo__item .todo__text {
+    width : 90%;
+}
+.todo__content ul .todo__item {
+    width : 100%;
+    margin: 20px auto 0;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.todo__content ul .todo__item:hover i {
+    opacity: 1;
+}
+.todo__content ul .todo__item:hover {
+    cursor: pointer;
+}
+.completed {
+    color: #aaa;
+}
+.todo__text input[type="checkbox"] {
+    opacity: 0;
+}
+.completed .todo__text input[type="checkbox"] {
+    opacity: 1;
+}
+/* DRAG */
+.dragging {
+    opacity: 0.5;
+    background-color: rgb(241, 235, 235);
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s;
+}
+.draggable {
+    cursor: move;
+}
